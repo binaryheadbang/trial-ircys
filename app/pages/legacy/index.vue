@@ -7,25 +7,25 @@
 
       <section class="content-card">
         <p class="section-kicker">Legacy</p>
-        <h1 class="page-title">Decree</h1>
+        <h1 class="page-title">Legacy</h1>
         <p class="lead">
-          Decree records contain official policy decisions, annual directives, and governance updates
-          that guide each IRCYS cycle.
+          The Legacy section captures IRCYS outcomes that remain useful beyond each annual cycle,
+          including official records, documentation, and research references.
         </p>
       </section>
 
-      <section class="decree-list" aria-label="Decree archive">
-        <article class="decree-card">
-          <h2>Policy Updates</h2>
-          <p>Rule revisions, judging standards, and eligibility policy adjustments.</p>
+      <section class="legacy-grid" aria-label="Legacy highlights">
+        <article class="legacy-card">
+          <h2>Institutional Memory</h2>
+          <p>Preserve decisions, standards, and published milestones for future organizers.</p>
         </article>
-        <article class="decree-card">
-          <h2>Operational Notices</h2>
-          <p>Deadlines, procedural clarifications, and organizer communications.</p>
+        <article class="legacy-card">
+          <h2>Knowledge Access</h2>
+          <p>Keep resources accessible for participants, educators, and partner institutions.</p>
         </article>
-        <article class="decree-card">
-          <h2>Governance Records</h2>
-          <p>Committee approvals and formal decisions documented for transparency.</p>
+        <article class="legacy-card">
+          <h2>Long-term Impact</h2>
+          <p>Show how student research output contributes to broader academic communities.</p>
         </article>
       </section>
     </main>
@@ -50,7 +50,7 @@
 }
 
 .content-card,
-.decree-card {
+.legacy-card {
   background: rgba(255, 255, 255, 0.9);
   padding: 2.2rem 2.5rem;
   border-radius: 24px;
@@ -79,18 +79,19 @@
   color: #4b3f32;
 }
 
-.decree-list {
+.legacy-grid {
   display: grid;
   gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.decree-card h2 {
+.legacy-card h2 {
   margin: 0 0 0.65rem;
   font-size: 1.1rem;
   color: #2a2118;
 }
 
-.decree-card p {
+.legacy-card p {
   margin: 0;
   color: #4f4337;
   line-height: 1.65;
@@ -106,7 +107,7 @@
   }
 
   .content-card,
-  .decree-card {
+  .legacy-card {
     padding: 1.8rem;
   }
 }

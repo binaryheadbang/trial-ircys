@@ -17,6 +17,10 @@
   min-height: 100vh;
   padding: 0.8rem 3rem 2rem;
   background-color: #f3f2ed;
+  background-image: url("/img/bg2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .canvas {

@@ -3,6 +3,8 @@
     <SiteNav />
 
     <main class="canvas">
+      <CompetitionSubNav class="competition-subnav" />
+
       <section class="comp-shell" aria-label="Competition overview">
         <aside class="comp-rail curl-in">
           <p class="section-kicker">Competition</p>
@@ -242,6 +244,10 @@
   flex-direction: column;
   gap: 4rem;
   padding: 3rem 0 4rem;
+}
+
+.competition-subnav {
+  margin-bottom: -2.8rem;
 }
 
 .comp-shell {
@@ -693,6 +699,10 @@
   .canvas {
     padding: 2.5rem 0 3rem;
     gap: 3rem;
+  }
+
+  .competition-subnav {
+    margin-bottom: -2rem;
   }
 
   .comp-shell {

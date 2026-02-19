@@ -3,6 +3,8 @@
     <SiteNav />
 
     <main class="canvas">
+      <AboutSubNav class="about-subnav" />
+
       <section class="about-hero" aria-label="About overview">
         <div class="about-hero-content soften-in">
           <p class="section-kicker">About us</p>
@@ -277,6 +279,10 @@
   flex-direction: column;
   gap: 4rem;
   padding: 3rem 0 4rem;
+}
+
+.about-subnav {
+  margin-bottom: -2.8rem;
 }
 
 .soften-in {
@@ -743,6 +749,10 @@
   .canvas {
     padding: 2.5rem 0 3rem;
     gap: 3rem;
+  }
+
+  .about-subnav {
+    margin-bottom: -2rem;
   }
 
   .about-hero,

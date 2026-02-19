@@ -60,10 +60,36 @@
   box-sizing: border-box;
 }
 
+:root {
+  --app-bg-color: #f3f2ed;
+  --app-bg-image: url("/img/bg2.png");
+}
+
+html,
+body,
+#__nuxt {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
-  background: #f3f2ed;
+  background-color: var(--app-bg-color);
+  background-image: var(--app-bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   color: #3a342c;
   font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* Force one shared backdrop across all routes. */
+.page {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.page::before {
+  display: none !important;
 }
 </style>

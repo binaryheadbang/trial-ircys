@@ -3,10 +3,30 @@
     <SiteNav />
 
     <main class="canvas">
-      <section class="placeholder">
+      <CompetitionSubNav />
+
+      <section class="content-card">
         <p class="section-kicker">Competition</p>
         <h1 class="page-title">Eligibility</h1>
-        <p class="page-copy">Eligibility requirements for participants.</p>
+        <p class="lead">
+          IRCYS accepts entries from student researchers who meet the academic level, age range, and
+          submission standards defined for the current season.
+        </p>
+      </section>
+
+      <section class="rule-grid" aria-label="Eligibility requirements">
+        <article class="rule-card">
+          <h2>Academic Level</h2>
+          <p>Open to high school and undergraduate participants from accredited institutions.</p>
+        </article>
+        <article class="rule-card">
+          <h2>Team Structure</h2>
+          <p>Individual or team submissions are accepted based on category-specific rules.</p>
+        </article>
+        <article class="rule-card">
+          <h2>Originality</h2>
+          <p>Projects must represent original work and disclose any previous publication status.</p>
+        </article>
       </section>
     </main>
   </div>
@@ -17,18 +37,24 @@
   min-height: 100vh;
   padding: 0.8rem 3rem 2rem;
   background-color: #f3f2ed;
+  background-image: url("/img/bg2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .canvas {
   padding: 3rem 0 4rem;
+  display: grid;
+  gap: 1.2rem;
 }
 
-.placeholder {
-  max-width: 720px;
-  background: rgba(255, 255, 255, 0.86);
-  padding: 2.5rem 3rem;
-  border-radius: 28px;
-  box-shadow: 0 20px 40px rgba(60, 47, 32, 0.12);
+.content-card,
+.rule-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2.2rem 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 18px 34px rgba(60, 47, 32, 0.1);
 }
 
 .section-kicker {
@@ -40,17 +66,35 @@
 }
 
 .page-title {
-  margin: 0 0 1rem;
+  margin: 0 0 0.9rem;
   font-size: clamp(2rem, 4vw, 2.6rem);
   font-family: "Erode", "Times New Roman", serif;
   color: #241c14;
 }
 
-.page-copy {
+.lead {
   margin: 0;
   font-size: 1.05rem;
   line-height: 1.7;
   color: #4b3f32;
+}
+
+.rule-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.rule-card h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1.1rem;
+  color: #2a2118;
+}
+
+.rule-card p {
+  margin: 0;
+  color: #4f4337;
+  line-height: 1.65;
 }
 
 @media (max-width: 900px) {
@@ -62,9 +106,9 @@
     padding: 2.4rem 0 3rem;
   }
 
-  .placeholder {
-    padding: 2rem;
+  .content-card,
+  .rule-card {
+    padding: 1.8rem;
   }
 }
 </style>
-

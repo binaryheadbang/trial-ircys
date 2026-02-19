@@ -3,50 +3,40 @@
     <SiteNav />
 
     <main class="canvas">
-      <section class="hero">
-        <p class="section-kicker">About us</p>
-        <h1 class="page-title">ABOUT US - WHAT IS IRCYS</h1>
+      <AboutSubNav />
+
+      <section class="content-card">
+        <p class="section-kicker">About Us</p>
+        <h1 class="page-title">What is IRCYS?</h1>
         <p class="lead">
-          The International Research Competition for Young Scientists (IRCYS) is a premier global
-          event dedicated to fostering scientific research among youth. Unlike typical invention
-          fairs, IRCYS places a strong emphasis on the research process, methodology, and
-          scientific analysis.
+          The International Research Competition for Young Scientists (IRCYS) is a global competition
+          designed for students who want to present structured, evidence-based research.
         </p>
         <p class="lead">
-          Moving to its 7th Edition in 2026, IRCYS transforms into a mid-year grand summit,
-          inviting young brilliant minds to gather in the Island of Gods, Bali, to present their
-          discoveries.
+          Beyond project showcases, IRCYS emphasizes research design, scientific communication,
+          mentorship, and measurable impact.
         </p>
       </section>
-    </main>
 
-    <footer class="footer">
-      <div class="footer-brand">
-        <img src="/img/logo.png" alt="International Research Competition logo" />
-        <p>International Research Competition &amp; Olympiad</p>
-      </div>
-      <div class="footer-links">
-        <div>
-          <h4>Programs</h4>
-          <a href="#">Categories</a>
-          <a href="#">Mentors</a>
-          <a href="#">Awards</a>
-        </div>
-        <div>
-          <h4>Resources</h4>
-          <a href="#">Guidebook</a>
-          <a href="#">FAQ</a>
-          <a href="#">Press</a>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <a href="#">info@olympiad.org</a>
-          <a href="#">+62 21 555 4421</a>
-          <a href="#">Jakarta, Indonesia</a>
-        </div>
-      </div>
-      <p class="footer-note">(c) 2026 Olympiad Network. All rights reserved.</p>
-    </footer>
+      <section class="details-grid" aria-label="IRCYS details">
+        <article class="detail-card">
+          <h2>Why IRCYS exists</h2>
+          <p>
+            We bridge school-level curiosity with professional research practices so students can build
+            stronger scientific thinking before entering university.
+          </p>
+        </article>
+
+        <article class="detail-card">
+          <h2>What participants gain</h2>
+          <ul>
+            <li>Structured feedback from judges and mentors</li>
+            <li>International exposure for original research work</li>
+            <li>Opportunities for scholarship and collaboration</li>
+          </ul>
+        </article>
+      </section>
+    </main>
   </div>
 </template>
 
@@ -55,21 +45,25 @@
   min-height: 100vh;
   padding: 0.8rem 3rem 2rem;
   background-color: #f3f2ed;
+  background-image: url("/img/bg2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .canvas {
   padding: 3rem 0 4rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 1.2rem;
 }
 
-.hero {
-  max-width: 720px;
-  background: rgba(255, 255, 255, 0.86);
-  padding: 2.5rem 3rem;
-  border-radius: 28px;
-  box-shadow: 0 20px 40px rgba(60, 47, 32, 0.12);
-  margin-bottom: 1.6rem;
+.content-card,
+.detail-card {
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2.2rem 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 18px 34px rgba(60, 47, 32, 0.1);
 }
 
 .section-kicker {
@@ -81,7 +75,7 @@
 }
 
 .page-title {
-  margin: 0 0 1rem;
+  margin: 0 0 0.9rem;
   font-size: clamp(2rem, 4vw, 2.6rem);
   font-family: "Erode", "Times New Roman", serif;
   color: #241c14;
@@ -89,61 +83,36 @@
 
 .lead {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.7;
   color: #4b3f32;
 }
 
 .lead + .lead {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
-.footer {
-  margin-top: 2rem;
-  padding: 2.5rem 3rem 2rem;
-  background: rgba(33, 26, 18, 0.92);
-  color: #f7f1e7;
-  border-radius: 32px;
-}
-
-.footer-brand {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.footer-brand img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-}
-
-.footer-links {
+.details-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-.footer-links h4 {
+.detail-card h2 {
   margin: 0 0 0.8rem;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  font-size: 1.22rem;
+  color: #2a2118;
 }
 
-.footer-links a {
-  display: block;
-  color: rgba(247, 241, 231, 0.8);
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+.detail-card p,
+.detail-card li {
+  color: #4f4337;
+  line-height: 1.65;
 }
 
-.footer-links a:hover,
-.footer-links a:focus {
-  color: #ffffff;
+.detail-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
 }
 
 @media (max-width: 900px) {
@@ -155,10 +124,9 @@
     padding: 2.4rem 0 3rem;
   }
 
-  .hero,
-  .footer {
-    padding: 2rem;
+  .content-card,
+  .detail-card {
+    padding: 1.8rem;
   }
 }
 </style>
-
