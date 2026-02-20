@@ -19,7 +19,7 @@
       </section>
 
       <section class="details-grid" aria-label="IRCYS details">
-        <article class="detail-card">
+        <article class="detail-card detail-card--accent">
           <h2>Why IRCYS exists</h2>
           <p>
             We bridge school-level curiosity with professional research practices so students can build
@@ -27,13 +27,22 @@
           </p>
         </article>
 
-        <article class="detail-card">
+        <article class="detail-card detail-card--highlight">
           <h2>What participants gain</h2>
           <ul>
             <li>Structured feedback from judges and mentors</li>
             <li>International exposure for original research work</li>
             <li>Opportunities for scholarship and collaboration</li>
           </ul>
+        </article>
+
+        <article class="detail-card">
+          <h2>7th Edition in 2026</h2>
+          <p>
+            Moving to its 7th Edition in 2026, IRCYS transforms into a mid-year grand summit,
+            inviting young brilliant minds to gather in the Island of Gods, Bali, to present
+            their discoveries.
+          </p>
         </article>
       </section>
     </main>
@@ -54,12 +63,13 @@
 .canvas {
   padding: 3rem 0 4rem;
   display: grid;
-  gap: 1.2rem;
+  gap: 1.4rem;
+  width: min(1180px, 100%);
+  margin: 0 auto;
 }
 
 .content-card,
 .detail-card {
-  max-width: 900px;
   background: rgba(255, 255, 255, 0.9);
   padding: 2.2rem 2.5rem;
   border-radius: 24px;
@@ -94,8 +104,57 @@
 
 .details-grid {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.detail-card:nth-child(1),
+.detail-card:nth-child(2) {
+  grid-column: span 6;
+}
+
+.detail-card:last-child {
+  grid-column: 1 / -1;
+}
+
+.detail-card--highlight {
+  background: linear-gradient(135deg, rgba(255, 249, 237, 0.95), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(123, 90, 54, 0.2);
+}
+
+.detail-card--accent {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: #4b3f32;
+  border: 1px solid rgba(80, 56, 30, 0.35);
+}
+
+.detail-card--accent::before {
+  content: "";
+  position: absolute;
+  inset: auto -5.6rem -5.2rem auto;
+  width: clamp(240px, 36vw, 380px);
+  aspect-ratio: 1 / 1;
+  background: url("/img/logo.png") center / contain no-repeat;
+  opacity: 0.08;
+  filter: grayscale(1) sepia(0.55) saturate(0.7) brightness(1.9) contrast(0.85);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.detail-card--accent > * {
+  position: relative;
+  z-index: 1;
+}
+
+.detail-card.detail-card--accent p,
+.detail-card.detail-card--accent li {
+  color: #bba7a7;
+}
+
+.detail-card.detail-card--accent h2 {
+  color: #ffffff;
 }
 
 .detail-card h2 {
@@ -127,6 +186,17 @@
   .content-card,
   .detail-card {
     padding: 1.8rem;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-card:nth-child(1),
+  .detail-card:nth-child(2),
+  .detail-card:last-child,
+  .detail-card--highlight {
+    grid-column: auto;
   }
 }
 </style>
