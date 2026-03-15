@@ -3,204 +3,87 @@
     <SiteNav />
 
     <main class="canvas">
-      <section class="award-shell" aria-label="Awards overview">
-        <aside class="award-rail">
+      <section class="hero-card" aria-label="Awards introduction">
+        <div class="hero-copy">
           <p class="section-kicker">Medal & Award</p>
-          <h1 class="hero-title">Celebrate excellence with globally recognized honors.</h1>
-          <p class="hero-copy">
-            Winners receive medals, scholarships, and international recognition. Each award is
-            guided by a transparent rubric and validated by our academic partners.
+          <h1 class="page-title">Recognition Framework for IRCYS 2026</h1>
+          <p class="lead">
+            IRCYS 2026 uses a dual-awarding structure to recognize excellence across categories,
+            educational levels, and special distinctions.
           </p>
-          <div class="hero-actions">
-            <button class="primary-btn">Download Awards Guide</button>
-            <button class="ghost-btn">View Past Winners</button>
-          </div>
-          <div class="rail-medals">
-            <p class="card-kicker">Award tiers</p>
-            <div class="medal-item">
-              <span class="medal-dot gold"></span>
-              <div>
-                <strong>Gold Medal</strong>
-                <span>Top 5% overall score</span>
-              </div>
-            </div>
-            <div class="medal-item">
-              <span class="medal-dot silver"></span>
-              <div>
-                <strong>Silver Medal</strong>
-                <span>Top 10% overall score</span>
-              </div>
-            </div>
-            <div class="medal-item">
-              <span class="medal-dot bronze"></span>
-              <div>
-                <strong>Bronze Medal</strong>
-                <span>Top 20% overall score</span>
-              </div>
-            </div>
-          </div>
-        </aside>
-
-        <div class="award-main">
-          <section class="award-banner">
+          <div class="hero-summary">
             <div>
-              <p class="card-kicker">Recognition package</p>
-              <h2>What winners receive</h2>
-              <p>Scholarships, research grants, media coverage, and mentor placements.</p>
+              <strong>3</strong>
+              <span>Award groups</span>
             </div>
-            <div class="banner-metrics">
-              <div class="banner-item">
-                <svg class="banner-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M6 4h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                  />
-                  <path
-                    d="M8 8h8M8 12h5"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <div>
-                  <strong>48</strong>
-                  <span>Scholarships</span>
-                </div>
-              </div>
-              <div class="banner-item">
-                <svg class="banner-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M6 7h12v12H6z"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                  />
-                  <path
-                    d="M9 5h6M12 5v2"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <div>
-                  <strong>12</strong>
-                  <span>Research grants</span>
-                </div>
-              </div>
-              <div class="banner-item">
-                <svg class="banner-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M8 11a3 3 0 1 1 6 0 3 3 0 0 1-6 0Z"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                  />
-                  <path
-                    d="M4 20a8 8 0 0 1 16 0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <div>
-                  <strong>25</strong>
-                  <span>Mentor partners</span>
-                </div>
-              </div>
+            <div>
+              <strong>20%</strong>
+              <span>Gold threshold</span>
             </div>
-          </section>
+            <div>
+              <strong>All Levels</strong>
+              <span>Recognition scope</span>
+            </div>
+          </div>
+        </div>
 
-          <section class="award-highlights" aria-label="Award highlights">
-            <article class="award-card">
-              <h2>Grand Champion</h2>
-              <p>Highest composite score across all categories and presentations.</p>
-              <ul>
-                <li>Full scholarship package</li>
-                <li>International press feature</li>
-                <li>Mentor placement</li>
-              </ul>
-            </article>
-            <article class="award-card">
-              <h2>Category Excellence</h2>
-              <p>Top-scoring teams within each research category.</p>
-              <ul>
-                <li>Category medal & certificate</li>
-                <li>Research grant support</li>
-                <li>Panel feedback report</li>
-              </ul>
-            </article>
-            <article class="award-card">
-              <h2>Innovation Impact</h2>
-              <p>Projects with strong real-world adoption potential.</p>
-              <ul>
-                <li>Innovation badge</li>
-                <li>Partner incubation access</li>
-                <li>Pitch showcase slot</li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="award-criteria" aria-label="Judging criteria">
-            <div class="criteria-card">
-              <h2>Judging criteria</h2>
-              <p>
-                Each medal is determined by weighted scoring across originality, impact, and
-                presentation quality.
-              </p>
-              <div class="criteria-bars">
-                <div>
-                  <span>Originality & research depth</span>
-                  <div class="bar"><span style="width: 40%"></span></div>
-                </div>
-                <div>
-                  <span>Impact potential</span>
-                  <div class="bar"><span style="width: 35%"></span></div>
-                </div>
-                <div>
-                  <span>Presentation & execution</span>
-                  <div class="bar"><span style="width: 25%"></span></div>
-                </div>
-              </div>
-            </div>
-            <div class="criteria-panel">
-              <h3>Feedback timeline</h3>
-              <p>All finalists receive scorecards and mentor feedback within two weeks.</p>
-              <button class="secondary-btn">Request full rubric</button>
-            </div>
-          </section>
-
-          <section class="award-showcase" aria-label="Award showcase">
-            <div class="showcase-card">
-              <h2>Hall of recognition</h2>
-              <p>Celebrate the most inspiring teams from the last season.</p>
-              <div class="showcase-grid">
-                <div>
-                  <strong>2025</strong>
-                  <span>AI for Climate Risk</span>
-                </div>
-                <div>
-                  <strong>2024</strong>
-                  <span>Bio-based Packaging</span>
-                </div>
-                <div>
-                  <strong>2023</strong>
-                  <span>Clean Water Sensors</span>
-                </div>
-              </div>
-            </div>
-            <div class="showcase-cta">
-              <h3>Ready to earn a medal?</h3>
-              <p>Get the awards guide and prepare your submission early.</p>
-              <button class="primary-btn">Start your journey</button>
-            </div>
-          </section>
+        <div class="hero-panel">
+          <p class="panel-kicker">Award System</p>
+          <p class="panel-copy">
+            Recognition is divided into category-level excellence, level-based medals, and selected
+            special distinctions for standout participants.
+          </p>
         </div>
       </section>
+
+      <section class="awards-grid" aria-label="Award categories">
+        <article class="award-card award-card--medals">
+          <p class="card-kicker card-kicker--dark">2. Medals</p>
+          <h2>Per Educational Level</h2>
+          <p>
+            Medals are awarded to top teams <strong>within their specific level</strong> (e.g.
+            Elementary vs Elementary) based on the following distribution:
+          </p>
+          <div class="medal-breakdown">
+            <div class="medal-row">
+              <span class="medal-chip medal-chip--gold">Gold</span>
+              <p>Top 20% of participants.</p>
+            </div>
+            <div class="medal-row">
+              <span class="medal-chip medal-chip--silver">Silver</span>
+              <p>Next 40% of participants.</p>
+            </div>
+            <div class="medal-row">
+              <span class="medal-chip medal-chip--bronze">Bronze</span>
+              <p>Remaining 40% of participants.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="award-card award-card--grand">
+          <p class="card-kicker">1. Grand Award</p>
+          <h2>Best of Category</h2>
+          <p>
+            The highest honor given to the <strong>single best project</strong> in each category
+            (Theoretical, Applied, Humanity), competing across all education levels.
+          </p>
+          <ul>
+            <li>Grand Award in Theoretical</li>
+            <li>Grand Award in Applied</li>
+            <li>Grand Award in Humanity</li>
+          </ul>
+        </article>
+
+        <article class="award-card award-card--special">
+          <p class="card-kicker">3. Special Awards</p>
+          <h2>Additional Recognition</h2>
+          <ul>
+            <li>Young Scientist Award</li>
+            <li>Additional Offshore Special Awards (if any)</li>
+          </ul>
+        </article>
+      </section>
+
     </main>
 
     <footer class="footer">
@@ -247,453 +130,273 @@
   background-size: cover;
   position: relative;
   overflow-x: hidden;
-  overflow-y: visible;
-}
-
-.page::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0;
-  background-image: none;
-  background-repeat: no-repeat;
-  background-position: center 70%;
-  background-size: min(1100px, 90vw) auto;
-  opacity: 0.18;
-  transform: scaleX(-1) rotate(45deg);
-  transform-origin: center;
-}
-
-.top {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  min-width: 140px;
-}
-
-.brand-logo {
-  width: 140px;
-  height: 140px;
-  object-fit: contain;
 }
 
 .canvas {
-  flex: 1;
   position: relative;
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+  z-index: 1;
+  display: grid;
+  gap: 1.4rem;
+  width: min(1180px, 100%);
+  margin: 0 auto;
   padding: 3rem 0 4rem;
 }
 
-.award-shell {
-  display: grid;
-  grid-template-columns: minmax(260px, 0.45fr) minmax(0, 1fr);
-  gap: 2.5rem;
-  align-items: start;
-}
-
-.award-rail {
-  position: sticky;
-  top: 2rem;
-  align-self: start;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 2.4rem 2.2rem;
-  border-radius: 28px;
-  box-shadow: 0 20px 36px rgba(60, 47, 32, 0.12);
-  backdrop-filter: blur(8px);
-}
-
-.rail-medals {
-  margin-top: 2rem;
-  padding-top: 1.6rem;
-  border-top: 1px solid rgba(77, 63, 50, 0.18);
-  display: grid;
-  gap: 1.2rem;
-}
-
-.medal-item {
-  display: flex;
-  gap: 0.8rem;
-  align-items: flex-start;
-}
-
-.medal-item strong {
-  display: block;
-  font-size: 1.05rem;
-}
-
-.medal-item span {
-  color: #4b3f32;
-  font-size: 0.9rem;
-}
-
-.medal-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  margin-top: 0.35rem;
-}
-
-.medal-dot.gold {
-  background: #c79a46;
-}
-
-.medal-dot.silver {
-  background: #b8bfc8;
-}
-
-.medal-dot.bronze {
-  background: #b37b4b;
-}
-
-.award-main {
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
-}
-
-.award-banner {
-  background: rgba(34, 27, 19, 0.88);
-  color: #f7f1e7;
-  padding: 2.4rem;
-  border-radius: 28px;
-  box-shadow: 0 22px 40px rgba(40, 28, 17, 0.25);
-  display: grid;
-  gap: 1.8rem;
-}
-
-.award-banner h2 {
-  margin: 0.4rem 0 0.6rem;
-}
-
-.banner-metrics {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.2rem;
-}
-
-.banner-item {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.banner-icon {
-  width: 40px;
-  height: 40px;
-  color: #f7f1e7;
-  flex: 0 0 auto;
-}
-
-.banner-metrics strong {
-  display: block;
-  font-size: 1.4rem;
-  color: #f7f1e7;
-}
-
-.banner-metrics span {
-  color: rgba(247, 241, 231, 0.8);
-  font-size: 0.85rem;
-}
-
-.award-highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.6rem;
-}
-
+.hero-card,
 .award-card {
-  background: rgba(255, 255, 255, 0.88);
-  padding: 2.2rem;
-  border-radius: 26px;
-  box-shadow: 0 18px 30px rgba(60, 47, 32, 0.12);
-}
-
-.award-card h2 {
-  margin-top: 0;
-  font-family: "Erode", "Times New Roman", serif;
-}
-
-.award-card ul {
-  margin: 1.2rem 0 0;
-  padding-left: 1.1rem;
-  color: #4b3f32;
-  line-height: 1.6;
-}
-
-.award-card p {
-  color: #4b3f32;
-  line-height: 1.6;
-}
-
-.award-criteria {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 0.7fr);
-  gap: 2.5rem;
-  align-items: center;
-}
-
-.criteria-card {
-  background: rgba(255, 255, 255, 0.88);
-  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 28px;
-  box-shadow: 0 22px 40px rgba(60, 47, 32, 0.12);
+  box-shadow: 0 18px 34px rgba(60, 47, 32, 0.1);
 }
 
-.criteria-card h2 {
-  margin-top: 0;
-  font-family: "Erode", "Times New Roman", serif;
-}
-
-.criteria-card p {
-  color: #4b3f32;
-  line-height: 1.6;
-}
-
-.criteria-bars {
+.hero-card {
   display: grid;
-  gap: 1rem;
-  margin-top: 1.4rem;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.6fr);
+  gap: 1.4rem;
+  padding: 2.4rem;
+  border: 1px solid rgba(123, 90, 54, 0.15);
+  background: linear-gradient(140deg, rgba(248, 246, 241, 0.96), rgba(255, 255, 255, 0.98));
 }
 
-.criteria-bars span {
-  display: block;
-  font-size: 0.9rem;
-  color: #4b3f32;
-  margin-bottom: 0.4rem;
-}
-
-.bar {
-  height: 8px;
-  border-radius: 999px;
-  background: rgba(163, 123, 75, 0.2);
-  overflow: hidden;
-}
-
-.bar span {
-  display: block;
-  height: 100%;
-  background: #a37b4b;
-}
-
-.criteria-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.2rem;
-  text-align: center;
-  margin-top: 1.4rem;
-}
-
-.criteria-grid strong {
-  display: block;
-  font-size: 1.4rem;
-  color: #a37b4b;
-}
-
-.criteria-grid span {
-  font-size: 0.85rem;
-  color: #5d4a35;
-}
-
-.criteria-panel {
-  background: rgba(34, 27, 19, 0.86);
-  color: #f7f1e7;
-  padding: 2.2rem;
-  border-radius: 26px;
-}
-
-.criteria-panel p {
-  color: rgba(247, 241, 231, 0.82);
-  line-height: 1.6;
-}
-
-.award-showcase {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 0.7fr);
-  gap: 2.5rem;
-  align-items: center;
-}
-
-.showcase-card {
-  background: rgba(255, 255, 255, 0.88);
-  padding: 2.5rem;
-  border-radius: 28px;
-  box-shadow: 0 22px 40px rgba(60, 47, 32, 0.12);
-}
-
-.showcase-card h2 {
-  margin-top: 0;
-  font-family: "Erode", "Times New Roman", serif;
-}
-
-.showcase-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 1.4rem;
-}
-
-.showcase-grid strong {
-  display: block;
-  font-size: 1.1rem;
-  color: #a37b4b;
-}
-
-.showcase-grid span {
-  font-size: 0.85rem;
-  color: #5d4a35;
-}
-
-.showcase-cta {
-  background: rgba(34, 27, 19, 0.86);
-  color: #f7f1e7;
-  padding: 2.2rem;
-  border-radius: 26px;
-}
-
-.showcase-cta p {
-  color: rgba(247, 241, 231, 0.82);
-  line-height: 1.6;
+.hero-copy {
+  padding-right: 1rem;
 }
 
 .section-kicker {
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.6rem;
   font-size: 0.75rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #7b5a36;
 }
 
-.hero-title {
+.page-title {
+  margin: 0 0 0.9rem;
+  font-size: clamp(2rem, 4vw, 2.8rem);
   font-family: "Erode", "Times New Roman", serif;
-  font-size: clamp(2rem, 4.5vw, 3rem);
-  margin: 0 0 1rem;
   color: #241c14;
 }
 
-.hero-copy {
-  margin: 0 0 1.6rem;
-  max-width: 36rem;
+.lead {
+  margin: 0;
   font-size: 1.05rem;
-  line-height: 1.65;
+  line-height: 1.7;
   color: #4b3f32;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+.hero-panel {
+  position: relative;
+  overflow: hidden;
+  padding: 1.8rem;
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(92, 73, 47, 0.98), rgba(58, 44, 27, 0.97));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-panel::after {
+  content: "";
+  position: absolute;
+  inset: auto -4.5rem -4.8rem auto;
+  width: clamp(170px, 22vw, 250px);
+  aspect-ratio: 1 / 1;
+  background: url("/img/logo.png") center / contain no-repeat;
+  opacity: 0.06;
+  filter: grayscale(1) sepia(0.55) saturate(0.7) brightness(1.65) contrast(0.92);
+  pointer-events: none;
+}
+
+.panel-kicker,
+.card-kicker {
+  margin: 0 0 0.6rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.panel-kicker {
+  color: #d7c4ad;
+}
+
+.panel-copy {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: #e1d3c2;
+  line-height: 1.7;
+}
+
+.hero-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.4rem;
+}
+
+.hero-summary div {
+  padding: 0.9rem 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(123, 90, 54, 0.14);
+}
+
+.hero-summary strong {
+  display: block;
+  color: #7b5a36;
+  font-size: 1.15rem;
+}
+
+.hero-summary span {
+  color: #5f503f;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.awards-grid {
+  display: grid;
+  gap: 1.4rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: start;
+}
+
+.award-card {
+  padding: 2rem 2.1rem;
+}
+
+.award-card--medals {
+  grid-column: span 6;
+  background: linear-gradient(145deg, rgba(75, 63, 50, 0.98), rgba(43, 35, 27, 0.97));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 22px 40px rgba(40, 28, 17, 0.2);
+}
+
+.award-card--grand {
+  grid-column: span 6;
+  background: linear-gradient(140deg, rgba(248, 251, 247, 0.98), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(72, 103, 96, 0.18);
+}
+
+.award-card--special {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.46fr) minmax(0, 1fr);
+  gap: 1.2rem;
+  background: linear-gradient(140deg, rgba(255, 249, 239, 0.96), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(123, 90, 54, 0.18);
+}
+
+.award-card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.28rem;
+  color: #2a2118;
+}
+
+.award-card p {
+  margin: 0;
+  color: #4f4337;
+  line-height: 1.65;
+}
+
+.award-card ul {
+  margin: 1rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.award-card li {
+  color: #4f4337;
+  line-height: 1.6;
+}
+
+.award-card li + li {
+  margin-top: 0.28rem;
 }
 
 .card-kicker {
-  font-size: 0.7rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  margin: 0 0 1.2rem;
-  color: rgba(247, 241, 231, 0.75);
+  color: #7b5a36;
 }
 
-.top-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4rem;
+.card-kicker--dark {
+  color: #d7c4ad;
+}
+
+.award-card--medals h2,
+.award-card--medals p,
+.award-card--medals strong {
+  color: #f2e8dc;
+}
+
+.award-card--special h2 {
+  margin-bottom: 0.45rem;
+}
+
+.award-card--special ul {
+  margin-top: 0.2rem;
+}
+
+.medal-breakdown {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.medal-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.85rem 0.9rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.medal-row p {
+  margin: 0;
+  color: #d9cbbb;
+}
+
+.medal-chip {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  flex: 1 1 520px;
-  max-width: 100%;
-}
-
-.nav-link {
-  color: #1f1b15;
-  text-decoration: none;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  border-bottom: 1px solid transparent;
-  padding-bottom: 0.2rem;
-}
-
-.nav-link.is-active {
-  border-bottom-color: #1f1b15;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  border-bottom-color: #1f1b15;
-}
-
-.nav-cta {
-  border: 1px solid #a37b4b;
-  background: #ffffff;
-  color: #a37b4b;
-  padding: 0.6rem 1.6rem;
+  min-width: 78px;
+  padding: 0.3rem 0.7rem;
   border-radius: 999px;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 160ms ease, transform 160ms ease;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
-.nav-cta:hover,
-.nav-cta:focus {
-  background: #f1ede6;
-  transform: translateY(-1px);
+.medal-chip--gold {
+  background: rgba(199, 154, 70, 0.18);
+  color: #f2d18c;
 }
 
-.primary-btn,
-.ghost-btn {
+.medal-chip--silver {
+  background: rgba(184, 191, 200, 0.18);
+  color: #e0e4ea;
+}
+
+.medal-chip--bronze {
+  background: rgba(179, 123, 75, 0.18);
+  color: #e6bea2;
+}
+
+.primary-btn {
   border-radius: 999px;
-  padding: 0.65rem 1.7rem;
+  padding: 0.7rem 1.4rem;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
   border: 1px solid transparent;
-  transition: transform 160ms ease, box-shadow 160ms ease;
-}
-
-.secondary-btn {
-  border-radius: 999px;
-  padding: 0.6rem 1.6rem;
-  border: 1px solid rgba(247, 241, 231, 0.6);
-  background: transparent;
-  color: #f7f1e7;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  cursor: pointer;
-}
-
-.primary-btn {
   background: #a37b4b;
   color: #ffffff;
   box-shadow: 0 12px 20px rgba(163, 123, 75, 0.3);
-}
-
-.ghost-btn {
-  background: transparent;
-  color: #a37b4b;
-  border-color: rgba(163, 123, 75, 0.6);
+  transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
 .primary-btn:hover,
-.primary-btn:focus,
-.ghost-btn:hover,
-.ghost-btn:focus {
+.primary-btn:focus {
   transform: translateY(-1px);
 }
 
@@ -758,46 +461,29 @@
     padding: 2rem 1.5rem 2rem;
   }
 
-  .top {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .top-nav {
-    justify-content: flex-start;
-    gap: 1.5rem 2rem;
-  }
-
-  .nav-cta {
-    align-self: flex-start;
-  }
-
   .canvas {
     padding: 2.5rem 0 3rem;
-    gap: 3rem;
   }
 
-  .award-shell,
-  .award-criteria,
-  .award-showcase {
+  .hero-card,
+  .award-card {
+    padding: 1.8rem;
+  }
+
+  .hero-card,
+  .awards-grid,
+  .award-card--special {
     grid-template-columns: 1fr;
   }
 
-  .award-rail,
-  .criteria-card,
-  .showcase-card {
-    padding: 2.2rem 2rem;
+  .award-card--grand,
+  .award-card--medals,
+  .award-card--special {
+    grid-column: auto;
   }
 
-  .award-rail {
-    position: static;
-  }
-
-  .criteria-grid,
-  .showcase-grid,
-  .banner-metrics {
+  .hero-summary {
     grid-template-columns: 1fr;
-    text-align: left;
   }
 
   .footer {

@@ -9,22 +9,85 @@
         <p class="section-kicker">Legacy</p>
         <h1 class="page-title">Paper Collective</h1>
         <p class="lead">
-          Paper Collective is a curated archive of selected student research from IRCYS editions,
-          organized for learning, citation, and inspiration.
+          To honor the academic hard work of our participants, IRCYS introduces the
+          <strong> IRCYS Paper Collective</strong>.
         </p>
       </section>
 
       <section class="paper-grid" aria-label="Paper collective content">
-        <article class="paper-card">
-          <h2>Featured Themes</h2>
-          <p>Health innovation, sustainability, educational technology, and social policy.</p>
+        <article class="paper-card paper-card--feature">
+          <p class="card-kicker">Legacy - Paper Collective</p>
+          <h2>IRCYS Paper Collective</h2>
+          <div class="paper-points paper-points--triple">
+            <article class="paper-point">
+              <h3>What is it?</h3>
+              <p>
+                An official compilation (Proceeding) of full papers submitted by the Grand Finalists,
+                published as a digital archive and repository reference for IRCYS.
+              </p>
+            </article>
+            <article class="paper-point">
+              <h3>Access</h3>
+              <p>Available as a Digital E-Book and on the Online Repository.</p>
+            </article>
+            <article class="paper-point">
+              <h3>Requirement</h3>
+              <p>Full Paper must be submitted before the registration deadline closes.</p>
+            </article>
+          </div>
         </article>
-        <article class="paper-card">
-          <h2>Publication Format</h2>
-          <p>Each entry includes abstract, method summary, findings, and mentor notes.</p>
-        </article>
+
+        <a class="paper-card paper-card--collection" href="#" aria-label="Open IRCYS Paper Collective 2026">
+          <p class="collection-kicker">2026 Edition</p>
+          <h2>IRCYS Paper Collective 2026</h2>
+          <p>Official proceeding of Grand Finalist full papers for the current cycle.</p>
+          <span class="collection-link">Open Collection</span>
+        </a>
+
+        <a class="paper-card paper-card--collection" href="#" aria-label="Open IRCYS Paper Collective 2025">
+          <p class="collection-kicker">2025 Edition</p>
+          <h2>IRCYS Paper Collective 2025</h2>
+          <p>Archived finalist papers documenting research outcomes and selected works.</p>
+          <span class="collection-link">Open Collection</span>
+        </a>
+
+        <a class="paper-card paper-card--collection" href="#" aria-label="Open IRCYS Paper Collective 2024">
+          <p class="collection-kicker">2024 Edition</p>
+          <h2>IRCYS Paper Collective 2024</h2>
+          <p>Previous season collection preserved as part of the IRCYS legacy archive.</p>
+          <span class="collection-link">Open Collection</span>
+        </a>
       </section>
+
     </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <img src="/img/logo.png" alt="International Research Competition logo" />
+        <p>International Research Competition & Olympiad</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Programs</h4>
+          <a href="#">Categories</a>
+          <a href="#">Mentors</a>
+          <a href="#">Awards</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="#">Guidebook</a>
+          <a href="#">FAQ</a>
+          <a href="#">Press</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="#">info@olympiad.org</a>
+          <a href="#">+62 21 555 4421</a>
+          <a href="#">Jakarta, Indonesia</a>
+        </div>
+      </div>
+      <p class="footer-note">(c) 2026 Olympiad Network. All rights reserved.</p>
+    </footer>
   </div>
 </template>
 
@@ -42,7 +105,9 @@
 .canvas {
   padding: 3rem 0 4rem;
   display: grid;
-  gap: 1.2rem;
+  gap: 1.25rem;
+  width: min(1180px, 100%);
+  margin: 0 auto;
 }
 
 .content-card,
@@ -75,10 +140,48 @@
   color: #4b3f32;
 }
 
+.lead strong {
+  color: #2a2118;
+}
+
 .paper-grid {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.1rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.paper-card--feature {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  grid-column: 1 / -1;
+  background: linear-gradient(145deg, rgba(75, 63, 50, 0.98), rgba(43, 35, 27, 0.97));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.paper-card--feature::after {
+  content: "";
+  position: absolute;
+  inset: auto -5rem -5rem auto;
+  width: clamp(180px, 24vw, 280px);
+  aspect-ratio: 1 / 1;
+  background: url("/img/logo.png") center / contain no-repeat;
+  opacity: 0.06;
+  filter: grayscale(1) sepia(0.55) saturate(0.7) brightness(1.65) contrast(0.92);
+  pointer-events: none;
+}
+
+.paper-card--feature > * {
+  position: relative;
+  z-index: 1;
+}
+
+.card-kicker {
+  margin: 0 0 0.55rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #d7c4ad;
 }
 
 .paper-card h2 {
@@ -91,6 +194,163 @@
   margin: 0;
   color: #4f4337;
   line-height: 1.65;
+}
+
+.page-footer {
+  display: grid;
+  gap: 0.25rem;
+  justify-items: center;
+  padding: 1rem 1.2rem 0.25rem;
+  text-align: center;
+}
+
+.page-footer p {
+  margin: 0;
+  color: #4b3f32;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page-footer span {
+  color: #6d5a46;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.paper-card--feature h2,
+.paper-card--feature p {
+  color: #f2e8dc;
+}
+
+.paper-points {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.paper-point {
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  background: rgba(241, 248, 246, 0.9);
+  border: 1px solid rgba(72, 103, 96, 0.16);
+}
+
+.paper-point h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  color: #264c46;
+}
+
+.paper-point p {
+  color: #355b55;
+}
+
+.paper-card--collection {
+  grid-column: span 4;
+  display: grid;
+  gap: 0.65rem;
+  text-decoration: none;
+  color: inherit;
+  background: linear-gradient(140deg, rgba(247, 251, 250, 0.98), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(72, 103, 96, 0.16);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.paper-card--collection:hover,
+.paper-card--collection:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 36px rgba(60, 47, 32, 0.14);
+  border-color: rgba(123, 90, 54, 0.24);
+}
+
+.collection-kicker {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #7b5a36;
+}
+
+.paper-card--collection h2 {
+  margin-bottom: 0.2rem;
+}
+
+.paper-card--collection p {
+  color: #4f4337;
+}
+
+.collection-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.2rem;
+  color: #7b5a36;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem;
+  padding: 2.5rem 3rem 2rem;
+  background: rgba(33, 26, 18, 0.92);
+  color: #f7f1e7;
+  border-radius: 32px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-brand img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.footer-brand p {
+  margin: 0;
+  color: #f7f1e7;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer-links h4 {
+  margin: 0 0 0.8rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f7f1e7;
+}
+
+.footer-links a {
+  display: block;
+  color: rgba(247, 241, 231, 0.8);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: #ffffff;
+}
+
+.footer-note {
+  margin: 0;
+  font-size: 0.8rem;
+  color: rgba(247, 241, 231, 0.7);
 }
 
 @media (max-width: 900px) {
@@ -106,5 +366,19 @@
   .paper-card {
     padding: 1.8rem;
   }
+
+  .paper-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .paper-card--feature,
+  .paper-card--collection {
+    grid-column: auto;
+  }
+
+  .footer {
+    padding: 2.2rem 2rem 1.8rem;
+  }
+
 }
 </style>

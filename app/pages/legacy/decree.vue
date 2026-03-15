@@ -5,30 +5,115 @@
     <main class="canvas">
       <LegacySubNav />
 
-      <section class="content-card">
-        <p class="section-kicker">Legacy</p>
-        <h1 class="page-title">Decree</h1>
-        <p class="lead">
-          Decree records contain official policy decisions, annual directives, and governance updates
-          that guide each IRCYS cycle.
-        </p>
+      <section class="content-card" aria-label="Decree overview">
+        <div class="content-copy">
+          <p class="section-kicker">Legacy</p>
+          <h1 class="page-title">Decree</h1>
+          <p class="lead">
+            This section contains the archive of official IRCYS decrees, preserved as formal records
+            for each cycle and ready to be opened individually.
+          </p>
+        </div>
+        <aside class="decree-panel">
+          <p class="panel-kicker">Archive Note</p>
+          <p class="panel-copy">
+            Each decree serves as an official institutional reference for implementation,
+            governance, and annual policy direction.
+          </p>
+        </aside>
       </section>
 
       <section class="decree-list" aria-label="Decree archive">
-        <article class="decree-card">
-          <h2>Policy Updates</h2>
-          <p>Rule revisions, judging standards, and eligibility policy adjustments.</p>
+        <article class="decree-card decree-card--summary">
+          <p class="card-kicker">Legacy - Decree</p>
+          <h2>Decree Archive</h2>
+          <p class="feature-copy">
+            A structured archive of official decree documents issued for IRCYS implementation,
+            governance, and annual policy direction.
+          </p>
+          <div class="summary-meta">
+            <div>
+              <strong>Official</strong>
+              <span>Formal institutional record</span>
+            </div>
+            <div>
+              <strong>Archived</strong>
+              <span>Maintained by yearly cycle</span>
+            </div>
+          </div>
         </article>
-        <article class="decree-card">
-          <h2>Operational Notices</h2>
-          <p>Deadlines, procedural clarifications, and organizer communications.</p>
-        </article>
-        <article class="decree-card">
-          <h2>Governance Records</h2>
-          <p>Committee approvals and formal decisions documented for transparency.</p>
-        </article>
+
+        <div class="decree-entries">
+          <a class="decree-card decree-card--entry" href="#" aria-label="Open IRCYS Decree 2026">
+            <div class="entry-year">
+              <strong>2026</strong>
+              <span>Current Cycle</span>
+            </div>
+            <div class="entry-body">
+              <p class="entry-kicker">Official Decree</p>
+              <h2>IRCYS Official Decree 2026</h2>
+              <p>Formal decree for the 2026 cycle covering implementation and official provisions.</p>
+              <span class="entry-link">Open Decree</span>
+            </div>
+          </a>
+
+          <a class="decree-card decree-card--entry" href="#" aria-label="Open IRCYS Decree 2025">
+            <div class="entry-year">
+              <strong>2025</strong>
+              <span>Archived</span>
+            </div>
+            <div class="entry-body">
+              <p class="entry-kicker">Official Decree</p>
+              <h2>IRCYS Official Decree 2025</h2>
+              <p>Archived decree document for governance and annual operational direction.</p>
+              <span class="entry-link">Open Decree</span>
+            </div>
+          </a>
+
+          <a class="decree-card decree-card--entry" href="#" aria-label="Open IRCYS Decree 2024">
+            <div class="entry-year">
+              <strong>2024</strong>
+              <span>Archived</span>
+            </div>
+            <div class="entry-body">
+              <p class="entry-kicker">Official Decree</p>
+              <h2>IRCYS Official Decree 2024</h2>
+              <p>Reference decree from the previous season, preserved as part of IRCYS records.</p>
+              <span class="entry-link">Open Decree</span>
+            </div>
+          </a>
+        </div>
       </section>
+
     </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <img src="/img/logo.png" alt="International Research Competition logo" />
+        <p>International Research Competition & Olympiad</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Programs</h4>
+          <a href="#">Categories</a>
+          <a href="#">Mentors</a>
+          <a href="#">Awards</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="#">Guidebook</a>
+          <a href="#">FAQ</a>
+          <a href="#">Press</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="#">info@olympiad.org</a>
+          <a href="#">+62 21 555 4421</a>
+          <a href="#">Jakarta, Indonesia</a>
+        </div>
+      </div>
+      <p class="footer-note">(c) 2026 Olympiad Network. All rights reserved.</p>
+    </footer>
   </div>
 </template>
 
@@ -46,7 +131,9 @@
 .canvas {
   padding: 3rem 0 4rem;
   display: grid;
-  gap: 1.2rem;
+  gap: 1.25rem;
+  width: min(1180px, 100%);
+  margin: 0 auto;
 }
 
 .content-card,
@@ -55,6 +142,39 @@
   padding: 2.2rem 2.5rem;
   border-radius: 24px;
   box-shadow: 0 18px 34px rgba(60, 47, 32, 0.1);
+}
+
+.content-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.52fr);
+  gap: 1.2rem;
+  border: 1px solid rgba(123, 90, 54, 0.14);
+  background: linear-gradient(140deg, rgba(248, 246, 241, 0.96), rgba(255, 255, 255, 0.98));
+}
+
+.content-copy {
+  padding-right: 0.4rem;
+}
+
+.decree-panel {
+  padding: 1.4rem 1.45rem;
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(75, 63, 50, 0.98), rgba(43, 35, 27, 0.97));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.panel-kicker {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #d7c4ad;
+}
+
+.panel-copy {
+  margin: 0;
+  color: #d9cbbb;
+  line-height: 1.65;
 }
 
 .section-kicker {
@@ -81,7 +201,140 @@
 
 .decree-list {
   display: grid;
+  gap: 1.1rem;
+  grid-template-columns: minmax(260px, 0.42fr) minmax(0, 1fr);
+  align-items: start;
+}
+
+.decree-card--summary {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  grid-column: 1;
+  display: grid;
   gap: 1rem;
+  background: linear-gradient(145deg, rgba(75, 63, 50, 0.98), rgba(43, 35, 27, 0.97));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  align-self: start;
+}
+
+.decree-card--summary::after {
+  content: "";
+  position: absolute;
+  inset: auto -4.8rem -4.4rem auto;
+  width: clamp(150px, 20vw, 220px);
+  aspect-ratio: 1 / 1;
+  background: url("/img/logo.png") center / contain no-repeat;
+  opacity: 0.06;
+  filter: grayscale(1) sepia(0.55) saturate(0.7) brightness(1.65) contrast(0.92);
+  pointer-events: none;
+}
+
+.decree-card--summary > * {
+  position: relative;
+  z-index: 1;
+}
+
+.card-kicker {
+  margin: 0 0 0.55rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #d7c4ad;
+}
+
+.feature-copy {
+  max-width: 24rem;
+}
+
+.summary-meta {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.summary-meta div {
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.summary-meta strong {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 0.18rem;
+}
+
+.summary-meta span {
+  color: #d9cbbb;
+  line-height: 1.55;
+}
+
+.decree-entries {
+  grid-column: 2;
+  display: grid;
+  gap: 1.1rem;
+  align-content: start;
+}
+
+.decree-card--entry {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  background: linear-gradient(140deg, rgba(247, 251, 250, 0.98), rgba(255, 255, 255, 0.98));
+  border: 1px solid rgba(72, 103, 96, 0.16);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.decree-card--entry:hover,
+.decree-card--entry:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 36px rgba(60, 47, 32, 0.14);
+  border-color: rgba(123, 90, 54, 0.24);
+}
+
+.entry-kicker {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #7b5a36;
+}
+
+.entry-year {
+  display: grid;
+  align-content: start;
+  gap: 0.2rem;
+  padding-right: 0.9rem;
+  border-right: 1px solid rgba(123, 90, 54, 0.16);
+}
+
+.entry-year strong {
+  font-family: "Erode", "Times New Roman", serif;
+  font-size: 2rem;
+  line-height: 1;
+  color: #7b5a36;
+}
+
+.entry-year span {
+  color: #6d5a46;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.entry-body {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.entry-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.2rem;
+  color: #7b5a36;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 .decree-card h2 {
@@ -96,6 +349,73 @@
   line-height: 1.65;
 }
 
+.decree-card--summary h2,
+.decree-card--summary p {
+  color: #f2e8dc;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem;
+  padding: 2.5rem 3rem 2rem;
+  background: rgba(33, 26, 18, 0.92);
+  color: #f7f1e7;
+  border-radius: 32px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-brand img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.footer-brand p {
+  margin: 0;
+  color: #f7f1e7;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer-links h4 {
+  margin: 0 0 0.8rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f7f1e7;
+}
+
+.footer-links a {
+  display: block;
+  color: rgba(247, 241, 231, 0.8);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: #ffffff;
+}
+
+.footer-note {
+  margin: 0;
+  font-size: 0.8rem;
+  color: rgba(247, 241, 231, 0.7);
+}
+
 @media (max-width: 900px) {
   .page {
     padding: 2rem 1.5rem 2rem;
@@ -108,6 +428,29 @@
   .content-card,
   .decree-card {
     padding: 1.8rem;
+  }
+
+  .content-card,
+  .decree-list,
+  .decree-card--entry {
+    grid-template-columns: 1fr;
+  }
+
+  .decree-card--summary,
+  .decree-entries,
+  .decree-card--entry {
+    grid-column: auto;
+  }
+
+  .footer {
+    padding: 2.2rem 2rem 1.8rem;
+  }
+
+  .entry-year {
+    padding-right: 0;
+    padding-bottom: 0.8rem;
+    border-right: 0;
+    border-bottom: 1px solid rgba(123, 90, 54, 0.16);
   }
 }
 </style>

@@ -26,6 +26,7 @@ export const siteNav: NavItem[] = [
       { label: "Grand Final Mechanism", to: "/competition/grand-final-mechanism" },
       { label: "Timeline", to: "/competition/timeline" },
       { label: "Fee and Payment Policy", to: "/competition/fee-and-payment-policy" },
+      { label: "Judges", to: "/competition/judges" },
       { label: "Hospitality", to: "/competition/hospitality" },
       { label: "Rules and Regulation", to: "/competition/rules-and-regulation" },
     ],
@@ -43,11 +44,6 @@ export const siteNav: NavItem[] = [
   {
     label: "Get Involved",
     to: "/get-involved",
-    children: [
-      { label: "Become a Volunteer", to: "/get-involved/become-a-volunteer" },
-      { label: "Become a Partner", to: "/get-involved/become-a-partner" },
-      { label: "Become a Judge", to: "/get-involved/become-a-judge" },
-    ],
   },
   { label: "FAQ", to: "/faq" },
   { label: "Contact", to: "/contact" },
