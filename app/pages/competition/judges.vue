@@ -11,6 +11,8 @@
         <p class="lead">coming soon</p>
       </section>
     </main>
+
+    <SiteFooter />
   </div>
 </template>
 
@@ -76,3 +78,4 @@
   }
 }
 </style>
+

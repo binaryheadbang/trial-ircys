@@ -87,9 +87,25 @@ body {
 .page {
   background-color: transparent !important;
   background-image: none !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
 }
 
 .page::before {
   display: none !important;
+}
+
+.canvas {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .page {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
 }
 </style>

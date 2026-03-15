@@ -46,6 +46,8 @@
         </article>
       </section>
     </main>
+
+    <SiteFooter />
   </div>
 </template>
 
@@ -200,3 +202,4 @@
   }
 }
 </style>
+

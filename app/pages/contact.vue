@@ -9,6 +9,8 @@
         <p class="page-copy">Contact details and inquiry form go here.</p>
       </section>
     </main>
+
+    <SiteFooter />
   </div>
 </template>
 
@@ -71,4 +73,5 @@
   }
 }
 </style>
+
 

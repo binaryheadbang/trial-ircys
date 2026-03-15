@@ -9,6 +9,8 @@
         <p class="page-copy">Volunteer opportunities and sign-up info.</p>
       </section>
     </main>
+
+    <SiteFooter />
   </div>
 </template>
 
@@ -71,4 +73,3 @@
   }
 }
 </style>
-

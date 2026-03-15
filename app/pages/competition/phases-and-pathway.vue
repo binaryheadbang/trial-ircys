@@ -123,6 +123,8 @@
         </a>
       </section>
     </main>
+
+    <SiteFooter />
   </div>
 </template>
 
@@ -340,3 +342,4 @@
   }
 }
 </style>
+

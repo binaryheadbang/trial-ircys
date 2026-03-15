@@ -9,6 +9,8 @@
         <p class="page-copy">Partnership opportunities and benefits.</p>
       </section>
     </main>
+
+    <SiteFooter />
   </div>
 </template>
 
@@ -71,4 +73,3 @@
   }
 }
 </style>
-

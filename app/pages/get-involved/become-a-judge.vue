@@ -9,6 +9,8 @@
         <p class="page-copy">Judge eligibility and application steps.</p>
       </section>
     </main>
+
+    <SiteFooter />
   </div>
 </template>
 
@@ -71,4 +73,3 @@
   }
 }
 </style>
-

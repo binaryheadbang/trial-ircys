@@ -22,6 +22,7 @@ const links = [
   { label: "Grand Final Mechanism", to: "/competition/grand-final-mechanism" },
   { label: "Timeline", to: "/competition/timeline" },
   { label: "Fee and Payment Policy", to: "/competition/fee-and-payment-policy" },
+  { label: "Judges", to: "/competition/judges" },
   { label: "Hospitality", to: "/competition/hospitality" },
   { label: "Rules and Regulation", to: "/competition/rules-and-regulation" },
 ];
