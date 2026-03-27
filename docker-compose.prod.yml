@@ -1,0 +1,17 @@
+services:
+  app:
+    build: .
+    environment:
+      NODE_ENV: production
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.ircys.rule=Host(`ircys.eventbcs.com`)"
+      - "traefik.http.routers.ircys.entrypoints=websecure"
+      - "traefik.http.routers.ircys.tls.certresolver=myresolver"
+      - "traefik.http.services.ircys.loadbalancer.server.port=3000"
+    networks:
+      - bcs-network
+
+networks:
+  bcs-network:
+    external: true

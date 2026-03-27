@@ -1,0 +1,9 @@
+.git
+.gitignore
+.DS_Store
+.nuxt
+.output
+node_modules
+npm-debug.log*
+docker-compose*.yml
+README.md
